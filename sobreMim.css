@@ -1,0 +1,64 @@
+main {
+    margin: auto;
+
+    margin-top: 50px;
+    background-color: #F2ECD8;
+    margin-bottom: 50px;
+
+
+    max-width: 70%;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#main {
+    padding: 50px;
+    padding-top: 50px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+
+    align-items: center;
+    justify-items: center;
+}
+
+
+.fotosPedro {
+    max-width: 50%;
+    border-radius: 1000px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    /*grid-area: foto;*/
+
+}
+
+.texto {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    main {
+        max-width: 85%;
+    }
+
+    #main {
+        grid-template-columns: 1fr;
+        /*grid-template-rows: repeat(3, 1fr);*/
+        gap: 50px;
+    }
+
+    #fotoPedro2 {
+        grid-row-start: 3;
+    }
+
+    /*#apresentacao2 {*/
+    /*    grid-area: apresentacao2;*/
+    /*}*/
+}

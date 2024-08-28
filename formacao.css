@@ -1,0 +1,50 @@
+main {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+    background-color: #F2ECD8;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 10px #EDEDED;
+
+    max-width: 70%;
+}
+
+#main {
+    margin-bottom: 50px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    /*grid-template-rows: ;*/
+    align-items: center;
+    justify-items: center;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    main {
+        max-width: 90%;
+    }
+
+
+    #main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 3fr 1fr);
+        gap: 20px;
+    }
+
+}
