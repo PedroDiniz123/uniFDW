@@ -14,7 +14,7 @@ body {
 
 header {
     font-family: Helvetica;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 
     background: #A63369;
@@ -25,9 +25,9 @@ header {
     justify-content: center;
     align-items: center;
 
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
 
-    padding: 10px;
+    padding: 20px;
 }
 
 /*#main {*/
@@ -70,7 +70,7 @@ a:hover {
 }
 
 nav a {
-    font-size: 2em;
+    font-size: 1.75em;
     color: white;
     text-decoration: none;
 }
