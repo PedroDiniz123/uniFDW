@@ -1,0 +1,48 @@
+main {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+    background-color: #F2ECD8;
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+
+    width: 80vw;
+}
+
+#main {
+    margin-bottom: 50px;
+    
+    
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#projetos {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#sites {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#nav {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}

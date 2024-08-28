@@ -1,61 +1,49 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Contato</title>-->
-<!--  <link rel="stylesheet" href="stylePadrão.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--<header>-->
-<!--  <h1>CV Pedro Paradela Diniz Junqueira</h1>-->
-<!--</header>-->
-
-<!--<nav>-->
-<!--  <ul id="links">-->
-<!--    <li class="link"><a href="index.html">Sobre Mim</a></li>-->
-<!--    <li class="link"><a href="formacao.html">Formação</a></li>-->
-<!--    <li class="link"><a href="portfolio.html">Portfólio</a></li>-->
-<!--    <li class="link"><a href="contato.html"><b>Contato</b></a></li>-->
-<!--  </ul>-->
-<!--</nav>-->
-
-<!--<main>-->
-
-<!--</main>-->
-<!--</body>-->
-<!--</html>-->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    <link rel="stylesheet" href="contato.css">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="../style/stylePadrão.css">
+    <link rel="stylesheet" href="../style/contato.css">
 </head>
 <body>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Sobre Mim</a></li>
-            <li><a href="formacao.html">Formação</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+    <h1>CV Pedro Paradela Diniz Junqueira</h1>
 </header>
 
-<main class="container">
-    <section class="sobre-mim">
-        <h1>Sobre Mim</h1>
-        <p>Olá! Meu nome é [Seu Nome]. Sou [sua profissão] com [X] anos de experiência em [sua área de atuação]. Tenho paixão por [interesses profissionais] e estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
-        <p>Durante minha carreira, desenvolvi habilidades em [principais habilidades], trabalhando em projetos que envolveram [principais projetos]. Estou sempre aprendendo e aprimorando meus conhecimentos para oferecer o melhor em cada trabalho que realizo.</p>
-        <p>Nas horas vagas, gosto de [seus hobbies ou interesses pessoais], o que me ajuda a manter o equilíbrio entre a vida pessoal e profissional.</p>
-    </section>
-</main>
+<main>
+    <div id="main">
+        <nav>
+            <ul id="links">
+                <li class="link"><a href="../index.html">Sobre Mim</a></li>
+                <li class="link"><a href="formacao.html">Formação</a></li>
+                <li class="link"><a href="portfolio.html">Portfólio</a></li>
+                <li class="link"><a href="contato.html"><b>Contato</b></a></li>
+            </ul>
+        </nav>
 
-<footer>
-    <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
-</footer>
+        <div id="formulario">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group" id="grupo-msg">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div id="bot">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
 </body>
 </html>
